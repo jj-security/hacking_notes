@@ -1,5 +1,7 @@
 ## Manual Enumeration ##
 
+
+
 ```cat /etc/issue```
 
 ```cat /etc/*-release```
