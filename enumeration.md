@@ -1,6 +1,7 @@
 Links: 
 
 https://github.com/oncybersec/oscp-enumeration-cheat-sheet
+https://github.com/ffuf/ffuf
 
 # Mindmap
 
@@ -281,6 +282,12 @@ smbmap -H $ip -P 445 2>&1 | tee -a "smbmap-share-permissions.txt"; smbmap -u nul
 # List share contents
 smbmap -H $ip -P 445 -R 2>&1 | tee -a "smbmap-list-contents.txt"; smbmap -u null -p "" -H $ip -P 445 -R 2>&1 | tee -a "smbmap-list-contents.txt"
 ```
+
+```bash
+
+smbmap -H $target -u 'Anonymous' -p ''
+```
+
 
 **enum4linux:**
 
