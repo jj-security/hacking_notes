@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "1e7ba606e2895042",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a7eae7420f5be8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87f7c1c3f2df515b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "machines/image.png"
+              },
+              "icon": "lucide-image",
+              "title": "image"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8958320ff711efc7",
+    "type": "split",
+    "children": [
+      {
+        "id": "070f2c89f10bb40b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8150da8ed144d057",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2c37b1e9ca2d8249",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "93f7efb1848fdabd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1210089a66f8f693",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd0cb3091def5f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95085d052bd2670e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "machines/titanic_htb_notes 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for titanic_htb_notes 1"
+            }
+          },
+          {
+            "id": "f2ecd824de48e74c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "machines/titanic_htb_notes 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from titanic_htb_notes 1"
+            }
+          },
+          {
+            "id": "1d1077ee6f231c4e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "386082855925d429",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "machines/titanic_htb_notes 1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of titanic_htb_notes 1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "87f7c1c3f2df515b",
+  "lastOpenFiles": [
+    "machines/image-1.png",
+    "machines/image-2.png",
+    "machines/titanic_htb_notes.md",
+    "machines/image.png",
+    "template.md",
+    "tunneling.md",
+    "privesc.md",
+    "machines/titanic_htb_notes 1.md",
+    "commands.md"
+  ]
+}

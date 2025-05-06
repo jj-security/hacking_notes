@@ -117,6 +117,3 @@ ssh -R 4444:127.0.0.1:4444 student@192.168.149.52 -p 2222
 - The shell connects back through an SSH tunnel, evading firewalls and NAT.
 
 ---
-
-These techniques are crucial for pentesting and lateral movement within a network. Let me know if you need more details or practical scenarios!
-
