@@ -1,4 +1,4 @@
-# Port Redirection & Tunneling Notes
+# Port Redirection & Tunneling
 
 ## 1. **Local Port Forwarding (L-Tunneling)**
 
@@ -26,7 +26,6 @@ Remote port forwarding allows forwarding traffic from a remote machine to a loca
 ```sh
 ssh -R 5555:127.0.0.1:5555 student@192.168.149.52 -p 2222
 ```
-
 To catch the shell on the remote machine:
 
 ```sh

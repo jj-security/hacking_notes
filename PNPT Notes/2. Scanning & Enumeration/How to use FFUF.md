@@ -1,4 +1,4 @@
-# Using FFUF to Find Virtual Hosts (VHosts)
+# How to use FFUF
 
 ## 1. **What is FFUF?**
 FFUF (Fast Web Fuzzer) is a powerful and fast fuzzing tool used for discovering virtual hosts, directories, and subdomains.
@@ -57,7 +57,18 @@ Some techniques to evade security measures:
   ffuf -w wordlist.txt -H "Host: FUZZ.target.com" -u http://target.com -mc 200 -p 0.5
   ```
 
----
+## 7. **Basic Directory Scan**
+```sh
+ffuf -u http://TARGET/FUZZ -w /usr/share/wordlists/dirb/common.txt
+```
 
-These techniques help discover hidden virtual hosts on a target machine. Let me know if you need more details or additional examples!
+## 8. Add common web extensions (good for files + dirs)
+```sh
+ffuf -u http://TARGET/FUZZ -w /usr/share/wordlists/dirb/common.txt -e .php,.html,.txt,.bak,.zip,.tar.gz
+```
+
+## 9. Filter out noise (most sites return tons of 403/404)
+```sh
+ffuf -u http://TARGET/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc 200,204,301,302,307,401,403,405,500
+```
 

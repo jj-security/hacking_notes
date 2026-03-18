@@ -1,38 +1,6 @@
-Links: 
+# **Service Enumeration**
 
-https://github.com/oncybersec/oscp-enumeration-cheat-sheet
-https://github.com/ffuf/ffuf
-
-# Mindmap
-
-[OSCP Guide](https://xmind.app/m/QsNUEz/)
-
-# Network Enumeration
-
-## Autorecon
-
-```bash
-autorecon -o enumeration $ip1 $ip2
-```
-
-## Rustscan & nmap:
-
-Rustscan for fast port scanning and enumeration:
-
-```bash
-rustscan 192.168.149.52 -- -A -sV
-
-```
-
-Rustscan output:
-
-```bash
-
-```
-
-# Service Enumeration
-
-## FTP (21/tcp)
+## **FTP (21/tcp)**
 
 **Get FTP version:**
 
@@ -41,7 +9,7 @@ Rustscan output:
 nmap -Pn -sV -p 21 --script="banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "tcp_21_ftp_nmap.txt" $ip
 ```
 
-## SSH (22/tcp)
+## **SSH (22/tcp)**
 
 **Get SSH version:**
 
@@ -50,7 +18,7 @@ nmap -Pn -sV -p 21 --script="banner,(ftp* or ssl*) and not (brute or broadcast o
 nmap -Pn -sV -p 22 --script=banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods -oN tcp_22_ssh_nmap.txt $ip
 ```
 
-## SMTP (25/tcp)
+## **SMTP (25/tcp)**
 
 **Get SMTP version:**
 
@@ -65,7 +33,7 @@ nmap -Pn -sV -p 25 "--script=banner,(smtp* or ssl*) and not (brute or broadcast 
 /home/kali/.local/bin/smtp-user-enum -V -m RCPT -w -f '<user@example.com>' -d 'domain.local' -U "/usr/share/metasploit-framework/data/wordlists/unix_users.txt" $ip 25 2>&1 | tee "tcp_25_smtp_user-enum.txt"
 ```
 
-## DNS (53/tcp, 53/udp)
+## **DNS (53/tcp, 53/udp)**
 
 **Get DNS version:**
 
@@ -95,7 +63,7 @@ nslookup $ip $ip
 gobuster dns -d $domain -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -t 16 -o "tcp_53_dns_gobuster.txt"
 ```
 
-## HTTP/HTTPS (40/tcp, 443/tcp)
+## **HTTP/HTTPS (40/tcp, 443/tcp)**
 
 **Get HTTP(S) version:**
 
@@ -472,6 +440,30 @@ sudo mount -o rw,vers=2 $ip:/home /mnt
 sudo mount -o nolock $ip:/home /mnt/
 ```
 
+**Example:**
+
+```bash
+┌──(kali㉿VM2)-[~]
+└─$ showmount -e 192.168.1.206                       
+Export list for 192.168.1.206:
+/srv/nfs 172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
+
+┌──(kali㉿VM2)-[~]
+└─$ sudo mount -t nfs 192.168.1.206:/srv/nfs /mnt/nfs
+                                                  
+┌──(kali㉿VM2)-[~]
+└─$ ls -la /mnt/nfs                                  
+total 12
+drwxr-xr-x 2 nobody nogroup 4096 Jun  2  2021 .
+drwxr-xr-x 3 root   root    4096 Mar 16 22:24 ..
+-rw-r--r-- 1 root   root    1911 Jun  2  2021 save.zip
+                                                                                                                        
+┌──(kali㉿VM2)-[~]
+└─$ 
+```
+
+
+
 ## **MySQL (3306/tcp)**
 
 **Get MySQL version:**
@@ -497,6 +489,11 @@ SHOW VARIABLES;
 
 ```bash
 SHOW GRANTS;
+```
+
+**Show databases**
+```bash
+SHOW DATABASES;
 ```
 
 **Show root privs:**

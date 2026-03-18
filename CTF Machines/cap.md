@@ -8,7 +8,6 @@ N/A
 
 ```sudo nmap -sU $target --defeat-icmp-ratelimit -p- -oN $target.nmap -vvv --min-rate 1000 -T5```
 
-
 #### Nmap TCP Results
 ```
 └─# nmap -sS -sV -Pn -p- -T4 -oN $target.nmap -vvv --min-rate 1000 10.10.10.245

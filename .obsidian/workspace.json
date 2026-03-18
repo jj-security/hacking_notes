@@ -4,22 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1a7eae7420f5be8b",
+        "id": "dd47b489cd1b2980",
         "type": "tabs",
         "children": [
           {
-            "id": "87f7c1c3f2df515b",
+            "id": "69ef5ab5209c4b17",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "machines/image.png"
+                "file": "Useful Links.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image"
+              "icon": "lucide-file",
+              "title": "Useful Links"
+            }
+          },
+          {
+            "id": "9df3892407d67738",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PNPT Notes/3. Exploitation Basics/3. Gaining Root with Metasploit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Gaining Root with Metasploit"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +69,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -76,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 862.5
   },
   "right": {
     "id": "1210089a66f8f693",
@@ -92,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "machines/titanic_htb_notes 1.md",
+                "file": "PNPT Notes/2. Scanning & Enumeration/1. Scanning with nmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for titanic_htb_notes 1"
+              "title": "Backlinks for 1. Scanning with nmap"
             }
           },
           {
@@ -140,24 +157,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "machines/titanic_htb_notes 1.md",
+                "file": "PNPT Notes/3. Exploitation Basics/3. Gaining Root with Metasploit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of titanic_htb_notes 1"
+              "title": "Outline of 3. Gaining Root with Metasploit"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 337.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -166,16 +184,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87f7c1c3f2df515b",
+  "active": "9df3892407d67738",
   "lastOpenFiles": [
-    "machines/image-1.png",
-    "machines/image-2.png",
-    "machines/titanic_htb_notes.md",
-    "machines/image.png",
-    "template.md",
-    "tunneling.md",
-    "privesc.md",
-    "machines/titanic_htb_notes 1.md",
-    "commands.md"
+    "test.txt",
+    "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image-3.png",
+    "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image-2.png",
+    "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image-1.png",
+    "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image.png",
+    "PNPT Notes/4. New Capstone/images/3. Assessment - Dev",
+    "PNPT Notes/4. New Capstone/3. Assessment - Dev.md",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academy/image-2.png",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academy/image-1.png",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academy/image.png",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academy",
+    "PNPT Notes/4. New Capstone/2. Assessment - Academy.md",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academny/image-1.png",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academny/image.png",
+    "PNPT Notes/4. New Capstone/images/2. Assessment - Academny",
+    "PNPT Notes/4. New Capstone/images",
+    "Exploits/Unrestricted File Upload/php-reverse-shell.php",
+    "Exploits/Unrestricted File Upload/unrestricted_file_upload.md",
+    "Exploits/Unrestricted File Upload",
+    "Exploits/php-reverse-shell.php",
+    "php-reverse-shell.php",
+    "Exploits/unrestricted_file_upload.md",
+    "Exploits/README.md",
+    "Exploits",
+    "PNPT Notes/4. New Capstone/2. Assessment - Academny.md",
+    "Helix CTF/test",
+    "Helix CTF/Helix_writeup.md",
+    "images/Helix_writeup/image-3.png",
+    "Helix_writeup.md",
+    "PNPT Notes/4. New Capstone/1. Assessment - Blue.md",
+    "PNPT Notes/3. Exploitation Basics/1. Reverse Shells vs Bind Shells.md",
+    "PNPT Notes/3. Exploitation Basics/3. Gaining Root with Metasploit.md",
+    "PNPT Notes/3. Exploitation Basics/2. Staged vs Non-Staged Payloads.md",
+    "PNPT Notes/3. Exploitation Basics/4. Manual Exploitation.md",
+    "PNPT Notes/3. Exploitation Basics/6. Credential Stuffing and Password Spraying.md",
+    "PNPT Notes/4. New Capstone/4. Walkthrough - Butler.md",
+    "PNPT Notes/4. New Capstone/3. Walkthrough - Dev.md",
+    "PNPT Notes/4. New Capstone/1. Walkthrough - Blue.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/5. Identifying Website Technologies.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/4. Hunting Subdomains.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/2. Discovering Email Addresses.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/1. Identifying our target.md",
+    "Useful Links.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/7. Google Fu.md",
+    "PNPT Notes/1. Reconnaissance & Information Gathering/6. Information Gathering With Burp Suite.md",
+    "PNPT Notes/2. Scanning & Enumeration/1. Scanning with nmap.md",
+    "Untitled.canvas"
   ]
 }
