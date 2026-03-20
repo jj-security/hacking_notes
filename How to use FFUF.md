@@ -12,6 +12,8 @@ Use FFUF to fuzz for potential virtual hosts on a target server:
 ffuf -w wordlist.txt -H "Host: FUZZ.target.com" -u http://target.com -mc 200
 ```
 
+>! This is a spoiler
+
 ### **Explanation:**
 - `-w wordlist.txt`: Specifies the wordlist for fuzzing.
 - `-H "Host: FUZZ.target.com"`: Injects words into the `Host` header.

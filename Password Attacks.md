@@ -10,7 +10,6 @@
 - `--show` show password after attack is complete
 
 # Attack Modes
- ===+======
 -  0 | Straight
 -  1 | Combination
 -  3 | Brute-force
