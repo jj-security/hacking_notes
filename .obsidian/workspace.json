@@ -186,6 +186,8 @@
   },
   "active": "9df3892407d67738",
   "lastOpenFiles": [
+    "Service Enumeration By Port.md",
+    "How to use FFUF.md",
     "test.txt",
     "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image-3.png",
     "PNPT Notes/4. New Capstone/images/3. Assessment - Dev/image-2.png",
@@ -211,7 +213,6 @@
     "Exploits/README.md",
     "Exploits",
     "PNPT Notes/4. New Capstone/2. Assessment - Academny.md",
-    "Helix CTF/test",
     "Helix CTF/Helix_writeup.md",
     "images/Helix_writeup/image-3.png",
     "Helix_writeup.md",
@@ -231,7 +232,6 @@
     "Useful Links.md",
     "PNPT Notes/1. Reconnaissance & Information Gathering/7. Google Fu.md",
     "PNPT Notes/1. Reconnaissance & Information Gathering/6. Information Gathering With Burp Suite.md",
-    "PNPT Notes/2. Scanning & Enumeration/1. Scanning with nmap.md",
     "Untitled.canvas"
   ]
 }
