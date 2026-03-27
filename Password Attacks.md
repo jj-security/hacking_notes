@@ -502,3 +502,26 @@ hashcat -m 0 -a 0 hash.txt /usr/share/wordlists/rockyou.txt
   22700 | MultiBit HD (scrypt)                                       | Cryptocurrency Wallet
   28200 | Exodus Desktop Wallet (scrypt)                             | Cryptocurrency Wallet
 ```
+
+
+| Range   | CIDR       | Size     |
+| :----- | :--------- | :--------- |
+| 10.0.0.0 - 10.255.255.255 | 10.0.0.0/8 | ~16.7M IPs     |
+| 172.16.0.0 – 172.31.255.255 | 172.16.0.0/12  | ~1M IPs   |
+| 192.168.0.0 - 192.168.255.255 | 192.168.0.0/16 | ~65K IPs |
+
+
+
+192.168.1.0/24 - 255
+
+192.168.0.0/24 - 255
+
+192.168.0.0/16 - 255
+
+10.50.2.25/32
+
+
+
+192.168.1.190
+
+192.168.1.0/24

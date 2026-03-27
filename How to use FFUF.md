@@ -1,3 +1,26 @@
+---
+title: "How to Use FFUF"
+author: "Julian"
+date: 2026-03-22
+subject: "Pentesting Notes"
+keywords: [ffuf, web fuzzing]
+lang: en-US
+
+# PDF styling
+titlepage: true
+titlepage-color: "1E90FF"
+titlepage-text-color: "FFFFFF"
+
+toc: true
+toc-own-page: true
+numbersections: true
+
+# Links
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+---
+
 # How to use FFUF
 
 ## 1. **What is FFUF?**

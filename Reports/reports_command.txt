@@ -1,0 +1,9 @@
+pandoc ../PNPT\ Notes/4.\ New\ Capstone/2.\ Assessment\ -\ Academy.md \
+  -o 'Academy_Pentest_Report.pdf' \
+  --pdf-engine=xelatex \
+  --template=./templates/eisvogel.latex \
+  --table-of-contents \
+  --toc-depth 6 \
+  --number-sections \
+  --syntax-highlighting=breezedark \
+--resource-path="../PNPT Notes/4. New Capstone:../PNPT Notes/4. New Capstone/images:."

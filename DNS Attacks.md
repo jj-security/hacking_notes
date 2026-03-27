@@ -1,4 +1,4 @@
-## Perform zone transfer (only works over port 53/tcp)
+## DNS Zone Transfer
 
 ### What it is?
 A zone transfer (DNS AXFR) is a DNS mechanism used to replicate all records from a primary DNS server to a secondary DNS server.
@@ -15,9 +15,15 @@ A zone transfer (DNS AXFR) is a DNS mechanism used to replicate all records from
 - If allowed publicly, it is free recon.
 - Full attack surface mapping
 
-`dig axfr @$ip $domain 2>&1 | tee "tcp_53_dns_dig.txt"`
+## Perform zone transfer (only works over port 53/tcp)
 
-`dig @192.0.2.1 example.com axfr`
+```
+dig axfr @$ip $domain 2>&1 | tee "tcp_53_dns_dig.txt"
+```
+
+```
+dig @192.0.2.1 example.com axfr
+```
 
 - If vulnerable, will return a full zone dump
 
