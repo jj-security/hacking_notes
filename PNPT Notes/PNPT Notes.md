@@ -4,7 +4,7 @@
 
 The reconnaissance stage involves gathering information about the target system or network. It includes passive information gathering techniques such as searching publicly available information, browsing websites, and examining DNS records. The goal is to collect as much information as possible to understand the target and identify potential entry points.
 
-**Scanning:**
+**Scanning & Enumeration:**
 
 In the scanning stage, the ethical hacker actively probes the target system or network to discover open ports, services, and vulnerabilities. Various tools and techniques are employed, such as port scanning, network mapping, and vulnerability scanning. This stage helps identify potential weaknesses that can be exploited.
 
@@ -42,3 +42,5 @@ It's important to note that ethical hacking should always be performed with prop
 		- Data Breaches
 			- HaveIBeenPwned, Breach-Parse, WeLeakInfo
 		- 
+
+![Cyber Kill Chain](<images/PNPT Notes/image.png>)

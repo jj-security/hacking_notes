@@ -48,3 +48,5 @@ https://ericzimmerman.github.io/ - Forensics tools
 [LOLBins](https://lolbas-project.github.io/) - LOLBins (Living off the land binaries)
 
 [GTFOBins](https://gtfobins.org/) - GTFOBins
+
+[OWASP Top 10](https://owasp.org/Top10/2025/)

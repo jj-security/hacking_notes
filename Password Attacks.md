@@ -1,4 +1,4 @@
-### Useful Tools For password cracking/bruteforce:
+### Useful Tools For password cracking/hash cracking/bruteforce:
 - THC-Hydra,
 - medusa,
 - john (jtr, john the ripper)
@@ -22,7 +22,6 @@ Using hashcat to crack MD5 (`-m 0`) straight (`-a 0`) with a wordlist (`rockyou.
 ```bash
 hashcat -m 0 -a 0 hash.txt /usr/share/wordlists/rockyou.txt
 ```
-
 
 ## Hash modes
 
